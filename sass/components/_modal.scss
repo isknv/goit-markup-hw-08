@@ -1,0 +1,209 @@
+.modal {
+  position: relative;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  max-width: 528px;
+  min-height: 581px;
+  padding: 40px 40px;
+  background: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &--icon {
+      width: 18px;
+      height: 18px;
+
+      &:hover,
+      &:focus {
+        fill: var(--logo-colors);
+      }
+    }
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--black-title-text);
+    margin-bottom: 12px;
+  }
+}
+
+.modal-div__button {
+  text-align: center;
+
+  .modal-submit__btn {
+    width: 200px;
+    height: 50px;
+    background: var(--logo-colors);
+    color: var(--white-text);
+    border: solid transparent;
+    border-radius: 4px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    padding: 10px 55px;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+      background: var(--button-hover);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+.modal__filed {
+  position: relative;
+  margin-bottom: 10px;
+
+  &--label {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #757575;
+  }
+
+  &--input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus,
+    &:hover + .modal__filed--icon,
+    &:focus + .modal__filed--icon {
+      fill: var(--logo-colors);
+      border-color: var(--logo-colors);
+    }
+  }
+
+  &--icon {
+    position: absolute;
+    top: 29px;
+    left: 14px;
+    width: 18px;
+    height: 18px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      fill: var(--logo-colors);
+    }
+  }
+
+  &--textarea {
+    margin-bottom: 0;
+  }
+
+  &--text {
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+
+    &:focus,
+    &:hover {
+      border-color: var(--logo-colors);
+    }
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+    }
+  }
+}
+
+.checkbox__last--input:checked + .check__label .check__label--span {
+  background-color: var(--logo-colors);
+}
+
+.checkbox__last {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: inline-flex;
+  align-items: center;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 15px;
+    margin-left: 11px;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: white;
+    border: 2px solid var(--black-title-text);
+    border-radius: 2px;
+  }
+}
+
+.check__label {
+  margin-left: 36px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+
+  &--link {
+    text-decoration-line: underline;
+    color: var(--logo-colors);
+  }
+
+  &--span {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    fill: var(--white-text);
+    left: 11px;
+    top: 4px;
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &--icon {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 14px;
+    height: 14px;
+  }
+}

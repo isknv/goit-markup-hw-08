@@ -1,0 +1,9 @@
+.doing {
+  padding-top: 0;
+}
+ 
+@media screen and (max-width: 1199px) {
+  .doing {
+    display: none;
+  }
+}

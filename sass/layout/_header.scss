@@ -1,0 +1,39 @@
+.header {
+  background: var(--white-text);
+  border-bottom: solid 1px #ececec;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__menu_button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-left: auto;
+
+    &--icon {
+      width: 40px;
+      height: 40px;
+      fill: #212121;
+    }
+  }
+}
+
+.header__menu_button:focus,
+.header__menu_button:hover {
+  fill: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .header__menu_button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__container {
+    justify-content: flex-start;
+  }
+}

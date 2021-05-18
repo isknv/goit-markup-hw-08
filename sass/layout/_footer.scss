@@ -1,0 +1,244 @@
+@media screen and (max-width: 767px) {
+  .footer {
+    &__container {
+      flex-direction: column;
+    }
+  }
+
+  .footer__first--grid {
+    flex-direction: column;
+  }
+
+  .footer-c {
+    text-align: center;
+  }
+
+  .footer__text {
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  .footer__div {
+    display: grid;
+    justify-content: center;
+  }
+
+  .footer {
+    &__second--grid {
+      justify-content: center;
+    }
+  }
+
+  .footer__form {
+    flex-direction: column;
+
+    &--input {
+      width: 100%;
+    }
+
+    &--button {
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__div {
+    text-align: center;
+  }
+
+  .footer-c {
+    text-align: center;
+  }
+
+  .footer__form {
+    flex-direction: column;
+
+    &--button {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+    }
+
+    &--input {
+      width: 450px;
+    }
+  }
+
+  .div__tablet {
+    width: 603px;
+    outline: solid 2px lightblue;
+  }
+
+  .footer__first--grid {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+  }
+
+  .footer__container {
+    flex-direction: column;
+  }
+
+  .footer__second--grid {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    &__div {
+      margin-left: 70px;
+    }
+
+    &__second--grid {
+      margin-left: auto;
+      flex-basis: calc((100% - 30px) / 2);
+    }
+
+    &__first--grid {
+      display: flex;
+      flex-basis: calc((100% - 30px) / 2);
+    }
+  }
+
+  .footer__form {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    &--icon {
+      right: 26px;
+      bottom: 12px;
+    }
+
+    &--input {
+    margin-right: 12px;
+    }
+  }
+}
+
+.footer {
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__container {
+    display: flex;
+  }
+}
+
+.footer__contacts_list {
+  &--item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &--item:first-child {
+    margin-top: 20px;
+  }
+
+  &--location {
+    color: var(--white-text);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-bottom: 9px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: var(--logo-colors);
+    }
+  }
+
+  &--link-contacts {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: var(--logo-colors);
+    }
+  }
+}
+
+.footer__social {
+  display: flex;
+  max-width: 206px;
+  flex-wrap: wrap;
+
+  &--item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &--link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+    &:hover,
+    &:focus {
+      background-color: var(--logo-colors);
+    }
+  }
+
+  &--icon {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+  }
+}
+
+.footer__form {
+  display: flex;
+
+  &--input {
+    flex-grow: 1;
+    height: 50px;
+    background: #2f303a;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: none;
+    padding-left: 16px;
+    color: var(--white-text);
+  }
+
+  &--button {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background: var(--logo-colors);
+    color: var(--white-text);
+    border: solid transparent;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    padding-left: 29px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+      background: var(--button-hover);
+    }
+  }
+}
+
+.footer__form--icon {
+  margin-left: 7px;
+}

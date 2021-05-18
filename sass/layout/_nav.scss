@@ -1,0 +1,134 @@
+@media screen and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+
+  .nav__contacts {
+    &--item {
+    display: none;
+
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+
+  .nav {
+    margin-left: 88px;
+  }
+
+  .nav__contacts {
+    display: block;
+
+    &--item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    &--item {
+      margin-right: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav {
+    margin-left: 93px;
+  }  
+
+  .nav__contacts {
+    display: inline-flex;
+
+    &--item:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  
+}
+
+.nav__menu {
+  display: flex;
+
+  &--item {
+    margin-right: auto;
+    position: relative;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  &--link {
+    color: var(--black-title-text);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+    &:focus,
+    &:hover {
+      color: var(--logo-colors);
+    }
+  }
+
+  &--current::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--logo-colors);
+  }
+}
+
+.nav__contacts {
+  // display: flex;
+  margin-left: auto;
+
+  
+  &--link {
+    color: #757575;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: inline-flex;
+    align-items: center;
+    transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+    &:hover,
+    &:hover .nav__contacts--tel,
+    &:hover .nav__contacts--email,
+    &:focus,
+    &:focus .nav__contacts--tel,
+    &:focus .nav__contacts--email {
+      color: var(--logo-colors);
+      fill: var(--logo-colors);
+    }
+  }
+
+  &--email {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: #757575;
+    transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  }
+
+  &--tel {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: #757575;
+    transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  }
+}
+
+.current {
+  color: var(--logo-colors);
+}

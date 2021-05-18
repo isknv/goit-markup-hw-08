@@ -1,0 +1,111 @@
+@media screen and (max-width: 767px) {
+ 
+  .mobile__menu {
+    position: absolute;
+    overflow-y: auto;
+    top: 0;
+    left: 50%;
+    z-index: 3;
+    transform: translateX(-50%);
+    width: 100vw;
+    max-width: 480px;
+    padding: 48px 40px;
+    background: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  
+    &--close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      width: 40px;
+      height: 40px;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+    }
+  
+    &--close:hover,
+    &--close:focus {
+      fill: #2196F3;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  
+    &--icon {
+      width: 40px;
+      height: 40px;
+    }
+  
+    &--item:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  
+    &--link {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+      color: #212121;
+    }
+  }
+  
+  .is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .mobile__menu_contacts {
+    margin-top: 302px;
+  
+    &--tel {
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+      color: #2196f3;
+    }
+  
+    &--email {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 1.16;
+      letter-spacing: 0.02em;
+      color: #757575;
+    }
+  
+    &--item:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+  
+  .mobile__menu_social {
+    display: inline-flex;
+    margin-top: 60px;
+    flex-wrap: wrap;
+  
+    &--item:not(:first-child)::before {
+      content: "";
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      transform: rotate(90deg);
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  
+    &--link {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.22;
+      letter-spacing: 0.02em;
+      color: #2196f3;
+    }
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .mobile__menu {
+    display: none;
+  }
+}
