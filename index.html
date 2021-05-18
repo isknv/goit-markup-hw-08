@@ -678,23 +678,24 @@
             ></textarea>
           </div>
           <div class="checkbox__last">
-            <input
-              type="checkbox"
-              id="checkbox"
-              class="visually__hidden checkbox__last--input"
-              required
-            />
-            <label for="checkbox" class="check__label"
-              >Соглашаюсь с рассылкой и принимаю
+            <label for="checkbox" class="check__label">
+              <input
+                type="checkbox"
+                id="checkbox"
+                class="visually__hiddenn checkbox__last--input"
+                required
+              />
+              <span class="checkbox__last--border">
+                <svg class="checkbox__last--icon" width="14" height="17">
+                  <use href="./images/symbol-defs.svg#icon-check"></use>
+                </svg>
+              </span>
+              Соглашаюсь с рассылкой и принимаю
               <span
                 ><a href="" class="check__label--link"
                   >Условия договора</a
                 ></span
-              ><span class="check__label--span">
-                <svg class="check__label--icon">
-                  <use href="./images/symbol-defs.svg#icon-check"></use>
-                </svg>
-              </span>
+              >
             </label>
           </div>
           <div class="modal-div__button">
