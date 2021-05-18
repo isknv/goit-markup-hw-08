@@ -787,12 +787,12 @@ address {
   max-width: 480px;
   height: 400px;
   background-size: 480px 400px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/mobile-1x.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/mobile-1x.jpg");
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .cap {
-    background-image: url("../../images/hero/mobile-retina-2x.jpg");
+    background-image: url("../images/hero/mobile-retina-2x.jpg");
   }
 }
 
@@ -800,13 +800,13 @@ address {
   .cap {
     max-width: 768px;
     background-size: 768px 400px;
-    background-image: url("../../images/hero/tablet-1x.jpg");
+    background-image: url("../images/hero/tablet-1x.jpg");
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .cap {
-    background-image: url("../../images/hero/tablet-retina-2x.jpg");
+    background-image: url("../images/hero/tablet-retina-2x.jpg");
   }
 }
 
@@ -817,13 +817,13 @@ address {
     max-width: 1600px;
     height: 600px;
     background-size: 1600px 600px;
-    background-image: url("../../images/hero/pc-1x.jpg");
+    background-image: url("../images/hero/pc-1x.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .cap {
-    background-image: url("../../images/hero/pc-retina-2x.jpg");
+    background-image: url("../images/hero/pc-retina-2x.jpg");
   }
 }
 
